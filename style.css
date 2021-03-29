@@ -1,0 +1,349 @@
+:root {
+  --max-width: 1350px;
+  --primary-color: red;
+  --secondary-color: goldenrod;
+  --light-color: white;
+  --dark-color: #333;
+}
+
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light-color);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+.container .social a {
+  text-decoration: none;
+}
+.container .social {
+  display: flex;
+  justify-content: center;
+}
+.social a img {
+  height: 30px;
+}
+.social a img:hover {
+  opacity: 0.5;
+}
+
+.container {
+  /* padding: 5px 10px; */
+  border-radius: 15px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 10px 2rem;
+  overflow: hidden;
+}
+
+/****************************************** navbar part *********************************/
+
+.nav-bar .logoOne {
+  height: 20vh;
+  display: flex;
+  position: absolute;
+  animation-timing-function: ease-in-out;
+  animation-name: movingLogoOne;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0s;
+}
+.nav-bar .logoTwo {
+  height: 20vh;
+  display: flex;
+  position: absolute;
+
+  animation-name: movingLogoTwo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes movingLogoOne {
+  from {
+    transform: translateY(-80px) translateX(300px);
+  }
+  to {
+    transform: translateY(-80px) translateX(-300px);
+  }
+}
+@keyframes movingLogoTwo {
+  from {
+    transform: translateY(-80px) translateX(-350px);
+  }
+  to {
+    transform: translateY(-80px) translateX(400px);
+  }
+}
+
+.nav-bar {
+  height: 25vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.nav-bar .buttonLeft {
+  display: flex;
+  position: relative;
+  background: cornsilk;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: black 5px 5px 1px;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar .buttonLeft:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  background: brown;
+}
+
+.nav-bar .buttonRight {
+  display: flex;
+  position: relative;
+  background: cornsilk;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: black 5px 5px 1px;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar .buttonRight:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  background: brown;
+}
+
+/****************************************** showcase part *********************************/
+
+.phone_header {
+  color: black;
+  background: linear-gradient(blue, black);
+  padding: 2rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  height: 60vh;
+}
+
+.py-2 .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#cardDetails {
+  width: 30%;
+  margin: 5px;
+  border: 1px solid gray;
+  box-shadow: 5px 5px;
+  border-radius: 16px;
+  text-align: center;
+}
+#cardDetails h4 {
+}
+
+@import url("https://fonts.googleapis.com/css?family=Numans");
+
+.showcase-container .category h1 {
+  background: red;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.showcase-container .category img {
+  height: 250px;
+  width: 200px;
+}
+
+.container_body {
+  height: 100%;
+  align-content: center;
+  font-family: "Numans", sans-serif;
+}
+
+#usersTable {
+  display: none;
+}
+
+#usersTable table {
+  width: 100%;
+  border: 1px solid gray;
+}
+#usersTable table tr td {
+  border: 1px solid gray;
+}
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+}
+
+/****************************************** footer part *********************************/
+
+.footer-container ul li {
+  list-style: none;
+  display: inline;
+  border: 1px solid black;
+  background-color: black;
+  padding: 3px;
+}
+.footer-container ul li a {
+  text-decoration: none;
+  background: rgb(255, 8, 8);
+  text-align: center;
+  border-radius: 20px 5px;
+  font-size: 110%;
+  color: white;
+  margin: 5px;
+}
+
+.footer-container ul li a:hover {
+  opacity: 0.5;
+  color: #333;
+}
+
+.main-footer {
+  border: solid 1px;
+  bottom: 0;
+  z-index: 2;
+  background: rgb(0, 0, 0);
+}
+
+.main-footer .container {
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+  color: white;
+}
+.main-footer .container h3,
+h2 {
+  color: var(--light-color);
+}
+
+.main-footer .container :nth-child(5) {
+  background: black;
+  position: sticky;
+}
+
+.main-footer .container div li {
+  margin: 0px;
+  padding: 2px;
+  display: grid;
+  border-radius: 5px;
+  width: 170px;
+}
+.main-footer .container div li :hover {
+  background: red;
+  color: black;
+}
+
+.main-footer .container {
+  width: 100%;
+}
+
+.footer-container :nth-child(4) img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.footer-container :nth-child(4) img {
+  margin: 5px;
+}
+.footerImg img {
+  height: 75px;
+}
+
+.footer_end {
+  background: black;
+  position: sticky;
+  color: white;
+  text-align: center;
+}
+
+/**************************************** Media Queries *********************************/
+
+@media screen and (max-width: 414px) {
+  .container_body {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas:
+      "nav"
+      "nav2"
+      "nav3"
+      "header"
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8"
+      "card9"
+      "card10"
+      "footer1"
+      "footer2";
+    grid-gap: 5px;
+  }
+  #nav-bar {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .articles-container {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .youtube {
+    width: 350px;
+  }
+
+  #main-footer :nth-child(1) {
+    grid-area: footer1;
+  }
+  #main-footer :nth-child(2) {
+    grid-area: footer2;
+  }
+  .ButtonNow {
+    font-size: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
