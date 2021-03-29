@@ -156,11 +156,7 @@ h6 {
   flex: wrap;
   flex-direction: row;
   position: relative;
-  height: 50vh;
-}
-
-.container_header img {
-  width: fit-content;
+  height: 30%;
 }
 
 .py-2 .container {
@@ -188,7 +184,8 @@ h6 {
 }
 
 .showcase-container .category img {
-  height: 250px;
+  position: relative;
+
   width: 200px;
 }
 
