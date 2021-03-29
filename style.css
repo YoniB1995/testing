@@ -85,7 +85,7 @@ h6 {
 }
 @keyframes movingLogoOne {
   from {
-    left: 0%;
+    left: 10%;
     transform: translateY(-80px);
   }
   to {
@@ -95,7 +95,7 @@ h6 {
 }
 @keyframes movingLogoTwo {
   from {
-    right: 0%;
+    right: 10%;
     transform: translateY(-80px);
   }
   to {
