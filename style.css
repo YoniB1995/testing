@@ -60,7 +60,8 @@ h6 {
 /****************************************** navbar part *********************************/
 
 .nav-bar .logoOne {
-  height: 20vh;
+  height: 10vh;
+
   display: flex;
   position: absolute;
   animation-timing-function: ease-in-out;
@@ -84,18 +85,22 @@ h6 {
 }
 @keyframes movingLogoOne {
   from {
-    transform: translateY(-80px) translateX(300px);
+    left: 0%;
+    transform: translateY(-80px);
   }
   to {
-    transform: translateY(-80px) translateX(-300px);
+    left: 50%;
+    transform: translateY(-80px);
   }
 }
 @keyframes movingLogoTwo {
   from {
-    transform: translateY(-80px) translateX(-350px);
+    right: 0%;
+    transform: translateY(-80px);
   }
   to {
-    transform: translateY(-80px) translateX(400px);
+    right: 50%;
+    transform: translateY(-80px);
   }
 }
 
@@ -141,16 +146,21 @@ h6 {
 
 /****************************************** showcase part *********************************/
 
-.phone_header {
+.container_header {
   color: black;
   background: linear-gradient(blue, black);
   padding: 2rem;
   border: 1px solid black;
   display: flex;
   justify-content: center;
+  flex: wrap;
   flex-direction: row;
   position: relative;
-  height: 60vh;
+  height: 50vh;
+}
+
+.container_header img {
+  width: fit-content;
 }
 
 .py-2 .container {
@@ -204,6 +214,47 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   justify-self: center;
+}
+
+#cardDetails {
+  cursor: pointer;
+}
+
+#cardDetails img {
+  height: 100px;
+}
+#cardDetails:hover {
+  background: #009cff;
+}
+
+.cardNewPage {
+  font-size: 250%;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 5px 5px black;
+}
+.cardNewPage h3 {
+  color: blue;
+  text-decoration-line: underline;
+}
+.cardNewPage button {
+  /* border-radius: 25px; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.cardNewPage .cardLeft {
+  flex-basis: 33%;
+}
+.cardNewPage .cardRight {
+  flex-basis: 66%;
+}
+.cardNewPage .cardRight img {
+  height: 200px;
+  border-radius: 50%;
 }
 
 /****************************************** footer part *********************************/
