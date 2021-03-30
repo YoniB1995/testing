@@ -49,7 +49,6 @@ h6 {
 }
 
 .container {
-  /* padding: 5px 10px; */
   border-radius: 15px;
   max-width: var(--max-width);
   margin: auto;
@@ -339,57 +338,192 @@ h2 {
 
 /**************************************** Media Queries *********************************/
 
-@media screen and (max-width: 414px) {
-  .container_body {
-    display: grid;
-    max-width: 100%;
-    grid-template-areas:
-      "nav"
-      "nav2"
-      "nav3"
-      "header"
-      "card1"
-      "card2"
-      "card3"
-      "card4"
-      "card5"
-      "card6"
-      "card7"
-      "card8"
-      "card9"
-      "card10"
-      "footer1"
-      "footer2";
-    grid-gap: 5px;
-  }
-  #nav-bar {
+@media screen and (max-width: 375px) {
+  .nav-bar .logoOne {
+    height: 10vh;
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    position: absolute;
+    animation-timing-function: ease-in-out;
+    animation-name: movingLogoOne;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 0s;
   }
-
-  .articles-container {
+  .nav-bar .logoTwo {
+    height: 20vh;
     display: flex;
-
-    flex-direction: column;
-    justify-content: space-evenly;
+    position: absolute;
+    animation-name: movingLogoTwo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes movingLogoOne {
+    from {
+      transform: translateY(-40px) translateX(-40px);
+    }
+    to {
+      transform: translateY(-40px) translateX(-40px);
+    }
+  }
+  @keyframes movingLogoTwo {
+    from {
+      transform: translateY(-40px) translateX(-100px);
+    }
+    to {
+      transform: translateY(-40px) translateX(-100px);
+    }
   }
 
-  .youtube {
-    width: 350px;
+  .category .showcase_Img_2,
+  .category .showcase_Img_3 {
+    display: none;
   }
 
-  #main-footer :nth-child(1) {
-    grid-area: footer1;
-  }
-  #main-footer :nth-child(2) {
-    grid-area: footer2;
-  }
-  .ButtonNow {
-    font-size: 10px;
-  }
-
-  .card {
+  #cards {
+    display: flex;
     width: 100%;
+    flex-direction: column;
+    flex: wrap;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  #cardDetails {
+    width: 100%;
+  }
+
+  .py-2 .container {
+    height: max-content;
+    width: fit-content;
+    padding: 10px;
+  }
+
+  tr {
+    width: 20%;
+  }
+
+  .cardNewPage {
+    font-size: 100%;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 5px 5px black;
+  }
+  .cardNewPage h3 {
+    color: red;
+    text-decoration-line: underline;
+  }
+  .cardNewPage button {
+    /* border-radius: 25px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid;
+    cursor: pointer;
+  }
+  .cardNewPage .cardLeft {
+    flex-basis: 33%;
+  }
+  .cardNewPage .cardRight {
+    flex-basis: 66%;
+  }
+  .cardNewPage .cardRight img {
+    height: 100px;
+    border-radius: 50%;
+  }
+  #usersTable {
+    display: none;
+  }
+
+  #usersTable table {
+    width: 100%;
+    font-size: 12px;
+    border: 1px solid gray;
+  }
+  #usersTable table tr td {
+    border: 1px solid gray;
+  }
+
+  .footer-container ul li {
+    list-style: none;
+    display: inline;
+    border: 1px solid black;
+    background-color: black;
+    padding: 3px;
+  }
+  .footer-container ul li a {
+    text-decoration: none;
+    background: rgb(255, 8, 8);
+    text-align: center;
+    border-radius: 20px 5px;
+    font-size: 110%;
+    color: white;
+    margin: 5px;
+  }
+
+  .footer-container ul li a:hover {
+    opacity: 0.5;
+    color: #333;
+  }
+
+  .main-footer {
+    border: solid 1px;
+    bottom: 0;
+    z-index: 2;
+    background: rgb(0, 0, 0);
+  }
+
+  .main-footer .container {
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    color: white;
+  }
+  .main-footer .container h3,
+  h2 {
+    color: var(--light-color);
+  }
+
+  .main-footer .container :nth-child(5) {
+    background: black;
+    position: sticky;
+  }
+
+  .main-footer .container div li {
+    margin: 0px;
+    padding: 2px;
+    display: grid;
+    border-radius: 5px;
+    width: 170px;
+  }
+  .main-footer .container div li :hover {
+    background: red;
+    color: black;
+  }
+
+  .main-footer .container {
+    width: 100%;
+  }
+
+  .footer-container :nth-child(4) img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .footer-container :nth-child(4) img {
+    margin: 5px;
+  }
+  .footerImg img {
+    height: 75px;
+  }
+
+  .footer_end {
+    background: black;
+    position: sticky;
+    color: white;
+    text-align: center;
   }
 }
