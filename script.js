@@ -33,13 +33,14 @@ function showForm(){
                     <br>
                     <label for="age">Age: <input type="number"  id="ageInput" required></label>
                     <br>
-                    <label for="telephone">Phone: <input type="tel"  id="phoneInput" required></label><br> <button onclick="submitNewUser()">Submit</button>
+                    <label for="telephone">Phone: <input type="tel"  id="phoneInput" required></label><br> <button onclick="submitNewUser()">Submit</button><a href="index.html"><button >Return</button></a>
                 </form>`;
 }
 
 function submitNewUser(){
     emailInputOne.value === emailInputTwo.value ?  alert('Account Added!') : alert("Not same password, try again");
 }
+
 
 fetch(`https://next.json-generator.com/api/json/get/NJ-UoW2Xq`)
 .then((usersList)=> {
