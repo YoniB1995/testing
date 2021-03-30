@@ -58,6 +58,15 @@ h6 {
 
 /****************************************** navbar part *********************************/
 
+.buttonLeft {
+  margin-top: 5px;
+  margin-left: 70px;
+}
+.buttonRight {
+  margin-top: 5px;
+  margin-right: 70px;
+}
+
 .nav-bar .logoOne {
   height: 10vh;
 
@@ -145,10 +154,18 @@ h6 {
 
 /****************************************** showcase part *********************************/
 
+.category .showcase_Img,
+.category .showcase_Img_2,
+.category .showcase_Img_3 {
+  border-radius: 20px;
+  box-shadow: 5px 5px black;
+}
+
 .container_header {
   color: black;
   background: linear-gradient(blue, black);
   padding: 2rem;
+  border-radius: 10px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -472,6 +489,9 @@ h2 {
     padding: 5px;
   }
 
+  .tech_logo {
+    border-radius: 50%;
+  }
   .footer-container ul li {
     list-style: none;
     display: inline;
