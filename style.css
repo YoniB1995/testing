@@ -338,7 +338,11 @@ h2 {
 
 /**************************************** Media Queries *********************************/
 
-@media screen and (max-width: 420px) {
+@media only screen and (min-width: 414px) and (max-width: 767px),
+  (min-width: 412px) and (max-width: 767px),
+  (min-width: 390px) and (max-width: 767px),
+  (min-width: 428px) and (max-width: 767px),
+  (min-width: 384px) and (max-width: 767px) {
   .nav-bar .logoOne {
     height: 10vh;
     display: flex;
