@@ -338,7 +338,7 @@ h2 {
 
 /**************************************** Media Queries *********************************/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   .nav-bar .logoOne {
     height: 10vh;
     display: flex;
