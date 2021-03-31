@@ -153,7 +153,22 @@ h6 {
 }
 
 /****************************************** showcase part *********************************/
+#loader {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  left: 40%;
+  right: 55%;
+  height: 300px;
+}
 
+#smallLoader {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  left: 45%;
+  bottom: 5%;
+}
 .category .showcase_Img,
 .category .showcase_Img_2,
 .category .showcase_Img_3 {
@@ -360,6 +375,20 @@ h2 {
   (min-width: 390px) and (max-width: 767px),
   (min-width: 428px) and (max-width: 767px),
   (min-width: 384px) and (max-width: 767px) {
+  #loader {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    height: 300px;
+  }
+  #smallLoader {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 25%;
+    bottom: -15%;
+  }
   .buttonLeft {
     margin-top: 5px;
     margin-left: 70px;

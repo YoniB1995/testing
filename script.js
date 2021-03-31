@@ -1,3 +1,20 @@
+ smallLoader.style.display = 'none';
+ 
+ function animationLoader(){
+ cards.style.display = 'none';
+ mainBody.style.height = '50vh';
+ const loading = ()=> {
+     setTimeout(()=>{
+        mainBody.style.height = '';
+        loader.style.display = 'none'
+        cards.style.display = 'flex';
+    },5000)
+}
+ loading();
+}
+animationLoader();
+
+
 class User {
     constructor(id,picture,age,name,email,phone){
         this.id= id;
@@ -83,7 +100,17 @@ function back(){
 
 function getCard(num){
     for (a=0;a<usersArray.length;a++){
+        newCardPage.style.display = 'none'
         if (num == a){
+            smallLoader.style.display = '';
+            mainBody.style.height = '50vh'
+    const smallLoading = ()=> {
+     setTimeout(()=>{
+        mainBody.style.height = '';
+        smallLoader.style.display = 'none'
+        newCardPage.style.display = ''
+    },1000)}
+smallLoading();
             cards.style.display = 'none';
             newCardPage.innerHTML = `<div class='cardNewPage'>
             <div class='cardLeft'><h3>User Details</h3>
