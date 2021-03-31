@@ -386,6 +386,7 @@ h2 {
     display: flex;
     position: absolute;
     justify-content: center;
+    height: 150px;
     left: 25%;
     bottom: -20%;
   }
