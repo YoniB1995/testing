@@ -57,7 +57,7 @@ function showForm(){
 }
 
 function submitNewUser(){
-    emailInputOne.value === emailInputTwo.value ?  alert('Account Added!') : alert("Not same password, try again");
+    emailInputOne.value === emailInputTwo.value ?  alert('Account Added!') : alert("Not same email, try again");
 }
 
 fetch(`https://next.json-generator.com/api/json/get/NJ-UoW2Xq`)
