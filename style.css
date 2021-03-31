@@ -380,7 +380,8 @@ h2 {
   (min-width: 412px) and (max-width: 767px),
   (min-width: 390px) and (max-width: 767px),
   (min-width: 428px) and (max-width: 767px),
-  (min-width: 384px) and (max-width: 767px) {
+  (min-width: 384px) and (max-width: 767px),
+  (min-width: 360px) and (max-width: 767px), {
   #loader {
     display: flex;
     position: absolute;

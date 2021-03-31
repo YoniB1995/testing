@@ -78,6 +78,7 @@ cardDetails[a].innerHTML = `<h3>User Details</h3>
  <h5>Phone: ${usersDetails[a]['phone']}<h5>
  <h4>Picture:</h4><img src="${usersDetails[a]['picture']}" alt="user_picture">`;
 
+
 tableAdd.innerHTML += `<tr>
  <td>${usersDetails[a]['name'].first} ${usersDetails[a]['name'].last}</td>
 <td>${usersDetails[a]['age']}</td>
@@ -100,7 +101,7 @@ function getWhatsAppNum(){
     alert('To Contact me add : 0538276526')
 }
 
-function back(){
+function goToMainPage(){
     cards.style.display = 'flex';
     newCardPage.innerHTML = '';
 }
@@ -126,7 +127,7 @@ smallLoadingGif();
             <h5>Age: ${usersArray[a]['age']}</h5>
             <h5>Phone: ${usersArray[a]['phone']}<h5>
             </div>
-            <div class='cardRight'><img src=${usersArray[a].picture} alt="user_picture"></div><button onclick='back()'>Return</button>
+            <div class='cardRight'><img src=${usersArray[a].picture} alt="user_picture"></div><button onclick='goToMainPage()'>Return</button>
             </div>`;
             break;
         }
