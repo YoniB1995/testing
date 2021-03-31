@@ -285,6 +285,12 @@ h6 {
   border-radius: 50%;
 }
 
+.userForm {
+  border: 1px solid black;
+  box-shadow: 3px 3px black;
+  padding: 20px;
+}
+
 /****************************************** footer part *********************************/
 
 .footer-container ul li {
