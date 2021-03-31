@@ -289,8 +289,16 @@ h6 {
   border: 1px solid black;
   box-shadow: 3px 3px black;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
 }
-
+.returnBtn {
+  flex-basis: 30%;
+  padding: 20px;
+  margin: 10px;
+  justify-content: center;
+}
 /****************************************** footer part *********************************/
 
 .footer-container ul li {

@@ -29,6 +29,7 @@ class User {
 const usersArray = [];
 
 function showTable(){
+    newCardPage.innerHTML = `<a href="index.html"><button class="returnBtn" type="button" >Return</button></a>`
     if (cards.style.display === 'none'){
         cards.style.display = 'flex';
         usersTable.style.display = 'none';
@@ -52,8 +53,9 @@ function showForm(){
                     <br>
                     <label for="age">Age: <input type="number"  id="ageInput" required></label>
                     <br>
-                    <label for="telephone">Phone: <input type="tel"  id="phoneInput" required></label><br> <button onclick="submitNewUser()">Submit</button><a href="index.html"><button >Return</button></a>
-                </form>`;
+                    <label for="telephone">Phone: <input type="tel"  id="phoneInput" required></label><br> <button onclick="submitNewUser()">Submit</button><a href="index.html"><button class="returnBtn" type="button" >Return</button></a>
+                </form>`
+                ;
                 
 }
 
