@@ -387,7 +387,7 @@ h2 {
     position: absolute;
     justify-content: center;
     left: 25%;
-    bottom: -15%;
+    bottom: -20%;
   }
   .buttonLeft {
     margin-top: 5px;
@@ -521,6 +521,13 @@ h2 {
   .tech_logo {
     border-radius: 50%;
   }
+
+  .techFooter,
+  .contactFooter,
+  .linksFooter {
+    padding-bottom: 30px;
+  }
+
   .footer-container ul li {
     list-style: none;
     display: inline;
