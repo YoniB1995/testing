@@ -99,25 +99,26 @@ function goToMainPage(){
 function getCardDetails(num){
     for (a=0;a<usersArray.length;a++){
     newCardPage.style.display = 'none'
-        if (num == a){
+    if (num == a){
         smallLoader.style.display = '';
         mainBody.style.height = '50vh'
-    const smallLoadingGif = ()=> {
-    setTimeout(()=>{
-    mainBody.style.height = '';
-    smallLoader.style.display = 'none'
-    newCardPage.style.display = ''
-    },1000)}
-    smallLoadingGif();
-    cards.style.display = 'none';
-    newCardPage.innerHTML = `<div class='cardNewPage'>
-    <div class='cardLeft'><h3>User Details</h3>
-    <h5>Full Name: ${usersArray[a].name}<h5>
-    <h5>Email: ${usersArray[a]['email']}<h5>
-    <h5>Age: ${usersArray[a]['age']}</h5>
-    <h5>Phone: ${usersArray[a]['phone']}<h5>
-    </div>
-    <div class='cardRight'><img src=${usersArray[a].picture} alt="user_picture"></div><button onclick='goToMainPage()'>Return</button>
-    </div>`;
-    break;}}
+            const smallLoadingGif = ()=> {
+        setTimeout(()=>{
+        mainBody.style.height = '';
+        smallLoader.style.display = 'none'
+        newCardPage.style.display = ''
+        },1000)}
+        smallLoadingGif();
+        cards.style.display = 'none';
+        newCardPage.innerHTML = `<div class='cardNewPage'>
+        <div class='cardLeft'><h3>User Details</h3>
+        <h5>Full Name: ${usersArray[a].name}<h5>
+        <h5>Email: ${usersArray[a]['email']}<h5>
+        <h5>Age: ${usersArray[a]['age']}</h5>
+        <h5>Phone: ${usersArray[a]['phone']}<h5>
+        </div>
+        <div class='cardRight'><img src=${usersArray[a].picture} alt="user_picture"></div><button onclick='goToMainPage()'>Return</button>
+        </div>`;
+    break;}
+}
 }

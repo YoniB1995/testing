@@ -1,16 +1,9 @@
 :root {
   --max-width: 1350px;
-  --primary-color: red;
-  --secondary-color: goldenrod;
   --light-color: white;
   --dark-color: #333;
 }
 
-.category {
-  --sports-color: #f99500;
-  --ent-color: #a66bbe;
-  --tech-color: #009cff;
-}
 * {
   margin: 0;
   padding: 0;
@@ -55,8 +48,6 @@ h6 {
   padding: 10px 2rem;
   overflow: hidden;
 }
-
-/****************************************** navbar part *********************************/
 
 .buttonLeft {
   margin-top: 5px;
@@ -152,7 +143,6 @@ h6 {
   background: brown;
 }
 
-/****************************************** showcase part *********************************/
 #loader {
   display: flex;
   position: absolute;
@@ -268,7 +258,6 @@ h6 {
   text-decoration-line: underline;
 }
 .cardNewPage button {
-  /* border-radius: 25px; */
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 1px solid;
@@ -299,7 +288,6 @@ h6 {
   margin: 10px;
   justify-content: center;
 }
-/****************************************** footer part *********************************/
 
 .footer-container ul li {
   list-style: none;
@@ -381,8 +369,6 @@ h2 {
   color: white;
   text-align: center;
 }
-
-/**************************************** Media Queries *********************************/
 
 @media only screen and (min-width: 414px) and (max-width: 767px),
   (min-width: 412px) and (max-width: 767px),
@@ -499,7 +485,6 @@ h2 {
     text-decoration-line: underline;
   }
   .cardNewPage button {
-    /* border-radius: 25px; */
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: 1px solid;
